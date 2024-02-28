@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home_One" android:title="首页" android:icon="@drawable/baseline_home_24"></item>
+    <item android:id="@+id/video_One" android:title="视频" android:icon="@drawable/baseline_ondemand_video_24"></item>
+    <item android:id="@+id/collection_One" android:title="收藏" android:icon="@drawable/baseline_collections_bookmark_25"></item>
+    <item android:id="@+id/itsmine_One" android:title="我的" android:icon="@drawable/baseline_manage_accounts_24"></item>
+
+</menu>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data></data>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".home.Detail_MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/return_image"
+          android:src="@drawable/baseline_arrow_back_24"
+          android:layout_width="50dp"
+          android:layout_height="50dp" />
+
+      <LinearLayout
+          android:layout_alignParentRight="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/baseline_headset_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:src="@drawable/baseline_more_vert_25"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+      </LinearLayout>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/title_text"
+            android:text="十九世纪卡德加啊滴哦我i"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/avatar_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+              <TextView
+                  android:layout_marginLeft="10dp"
+                  android:text="小尼姑在"
+                  android:id="@+id/author_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:layout_marginTop="8dp"
+                  android:layout_marginLeft="10dp"
+                  android:text="小尼姑在"
+                  android:id="@+id/author_text_one"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+          </LinearLayout>
+
+          <Button
+              android:layout_marginRight="20dp"
+              android:layout_alignParentRight="true"
+              android:text="关注"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/substance_text"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:text="内容"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/riv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:riv_corner_radius_top_right="10dp"
+            app:riv_corner_radius_top_left="10dp"
+            app:riv_corner_radius_bottom_right="10dp"
+            app:riv_corner_radius_bottom_left="10dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+      </LinearLayout>
+    </ScrollView>
+
+
+  </LinearLayout>
+</layout>
